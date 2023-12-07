@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="685dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingreso de equipo"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtNombreEquipos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del equipo"
+            android:minHeight="48dp" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese la Comuna del equipo"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtComuna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la Comuna "
+            android:minHeight="48dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enviarDatosFirestore"
+            android:text="Enviar Datos" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CargarLista"
+            android:text="Cargar Datos" />
+
+        <ListView
+            android:id="@+id/listafb"
+            android:layout_width="match_parent"
+            android:layout_height="199dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,7 @@ public class Perfil extends AppCompatActivity {
     }
 
     public void onClickMisEquipos(View view){
-        Intent intent = new Intent(this,MisEquipos.class);
+        Intent intent = new Intent(this,Firebase.class);
         startActivity(intent);
     }
 
