@@ -1,4 +1,4 @@
-package com.example.chuteapp;
+package com.Holass.chuteapp;
 
 import org.junit.Test;
 

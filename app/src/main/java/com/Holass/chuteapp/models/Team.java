@@ -1,12 +1,11 @@
-package com.example.chuteapp.models;
+package com.Holass.chuteapp.models;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.Toast;
 
-import com.example.chuteapp.DataHelper;
+import com.Holass.chuteapp.DataHelper;
 
 public class Team {
     DataHelper dh;

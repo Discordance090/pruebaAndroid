@@ -16,10 +16,10 @@
         android:theme="@style/Theme.ChuteApp"
         tools:targetApi="31" >
         <activity
-            android:name=".register"
+            android:name="com.Holass.chuteapp.register"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.Holass.chuteapp.MainActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" >
             <intent-filter>
@@ -28,15 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StoreView" />
-        <activity android:name=".Equipos" />
-        <activity android:name=".Perfil" />
-        <activity android:name=".Crear" />
-        <activity android:name=".Maps" />
-        <activity android:name=".MisEquipos" />
-        <activity android:name=".Equipo" />
-        <activity android:name=".Firebase"/>
-        <activity android:name=".Mqtt"/>
+        <activity android:name="com.Holass.chuteapp.StoreView" />
+        <activity android:name="com.Holass.chuteapp.Equipos" />
+        <activity android:name="com.Holass.chuteapp.Perfil" />
+        <activity android:name="com.Holass.chuteapp.Crear" />
+        <activity android:name="com.Holass.chuteapp.Maps" />
+        <activity android:name="com.Holass.chuteapp.MisEquipos" />
+        <activity android:name="com.Holass.chuteapp.Equipo" />
+        <activity android:name="com.Holass.chuteapp.Firebase"/>
+        <activity android:name="com.Holass.chuteapp.Mqtt"/>
     </application>
 
 </manifest>

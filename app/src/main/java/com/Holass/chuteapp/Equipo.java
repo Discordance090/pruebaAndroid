@@ -1,7 +1,4 @@
-package com.example.chuteapp;
-
-import static com.example.chuteapp.R.id.cargaAsync;
-import static com.example.chuteapp.R.id.idEquipo;
+package com.Holass.chuteapp;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -12,7 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.chuteapp.MisEquipos;
+
+
 
 import androidx.appcompat.app.AppCompatActivity;
 

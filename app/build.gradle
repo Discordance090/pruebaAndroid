@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.chuteapp'
+    namespace 'com.Holass.chuteapp'
     //noinspection GradleCompatible
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.chuteapp"
+        applicationId "com.Holass.chuteapp"
         minSdk 24
         targetSdk 34
         versionCode 1

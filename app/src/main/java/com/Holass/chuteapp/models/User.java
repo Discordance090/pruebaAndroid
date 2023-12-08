@@ -1,8 +1,8 @@
-package com.example.chuteapp.models;
+package com.Holass.chuteapp.models;
 
 import android.content.Context;
 
-import com.example.chuteapp.DataHelper;
+import com.Holass.chuteapp.DataHelper;
 
 public class User {
     int ID;

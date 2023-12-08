@@ -1,10 +1,12 @@
-package com.example.chuteapp;
+package com.Holass.chuteapp;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class StoreView extends AppCompatActivity {
 

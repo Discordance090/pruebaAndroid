@@ -1,11 +1,9 @@
-package com.example.chuteapp;
+package com.Holass.chuteapp;
 
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.chuteapp.models.Marcador;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;

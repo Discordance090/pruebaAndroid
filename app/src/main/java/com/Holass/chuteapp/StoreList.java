@@ -1,8 +1,10 @@
-package com.example.chuteapp;
+package com.Holass.chuteapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+
 
 public class StoreList extends AppCompatActivity {
 
