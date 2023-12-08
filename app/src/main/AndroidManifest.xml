@@ -36,6 +36,7 @@
         <activity android:name=".MisEquipos" />
         <activity android:name=".Equipo" />
         <activity android:name=".Firebase"/>
+        <activity android:name=".Mqtt"/>
     </application>
 
 </manifest>

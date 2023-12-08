@@ -37,7 +37,7 @@ public class Firebase extends AppCompatActivity {
         db= FirebaseFirestore.getInstance();
         txtNombreEquipo= findViewById(R.id.txtNombreEquipos);
         txtComuna= findViewById(R.id.txtComuna);
-        listaEquipos= findViewById(R.id.listafb);
+        listaEquipos = findViewById(R.id.listafb);
 
 
     }
@@ -45,9 +45,7 @@ public class Firebase extends AppCompatActivity {
         CargarListaFirestore();
     }
     public void CargarListaFirestore(){
-
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
         db.collection("equipos")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -55,15 +53,18 @@ public class Firebase extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
 
-                            List<String> listaEquipos = new ArrayList<>();
+                            List<String> listaEquipo = new ArrayList<>();
 
                             //Recorre todos los datos obtenidos ordenandolos en la lista
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                String linea = "||" + document.getString("nombre") + "||" +
-                                        document.getString("comuna") ;
-                                listaEquipos.add(linea);
-                            }
+                                String linea = "||" + document.getString("NombreEquipo") + "||" +
+                                        document.getString("Comuna") ;
+                                listaEquipo.add(linea);
 
+                            }
+                            ArrayAdapter<String> adapter = new ArrayAdapter<>(Firebase.this,
+                                    android.R.layout.simple_list_item_1,listaEquipo);
+                             listaEquipos.setAdapter(adapter);
                         } else {
                             //Se imprimira en consola si ahi errores al traer los datos
                             Log.e("TAG", "Error al obtener datos de Firestore", task.getException());
@@ -72,14 +73,12 @@ public class Firebase extends AppCompatActivity {
                 });
     }
 
-    public void enviarDatosFirestone(View  view){
+    public void enviarDatosFirestore(View  view){
         String nombreEquipo = txtNombreEquipo.getText().toString();
         String comuna = txtComuna.getText().toString();
-
         Map<String,Object> equipo = new HashMap<>();
         equipo.put("NombreEquipo",nombreEquipo);
         equipo.put("Comuna",comuna);
-
         db.collection("equipos")
                 .document(nombreEquipo)
                 .set(equipo)
@@ -90,7 +89,4 @@ public class Firebase extends AppCompatActivity {
                    Toast.makeText(this,"ERROR AL ENVIAR LOS DATOS "+e.getMessage(),Toast.LENGTH_SHORT).show();
                 });
     }
-
-
-
 }

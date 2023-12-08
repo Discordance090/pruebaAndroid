@@ -31,6 +31,11 @@ public class Perfil extends AppCompatActivity {
         setup();
     }
 
+    public void onclickMqtt(View view){
+        Intent intent = new Intent(this,Mqtt.class);
+        startActivity(intent);
+    }
+
     public void onClickCrear(View view){
         Intent intent = new Intent(this,Crear.class);
         startActivity(intent);
