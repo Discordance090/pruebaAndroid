@@ -77,8 +77,8 @@ public class Firebase extends AppCompatActivity {
         String comuna = txtComuna.getText().toString();
 
         Map<String,Object> equipo = new HashMap<>();
-        equipo.put("NombreEquipo",txtNombreEquipo);
-        equipo.put("Comuna",txtComuna);
+        equipo.put("NombreEquipo",nombreEquipo);
+        equipo.put("Comuna",comuna);
 
         db.collection("equipos")
                 .document(nombreEquipo)
